@@ -33,7 +33,7 @@ void calcSum (int num1, int num2){
 }
 
 void calcDiv (int num1, int num2){
-    if (num1==0 || num2==0 ){
+    if (num2==0 ){
       cout << "ei voi jakaa nollalla" << endl;
     }
     else {
@@ -48,7 +48,7 @@ int retSum (int num1, int num2){
 }
 
 float retDiv  (int num1, int num2){
-    if (num1==0 || num2==0 ){
+    if (num2==0 ){
         cout << "ei voi jakaa nollalla" << endl;
         return 0;
     }
