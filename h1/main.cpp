@@ -6,9 +6,11 @@ void calcSum(int, int);
 void calcDiv(int, int);
 float retDiv(int, int);
 int retSum(int, int);
+void terveiset(int num);
 
 int main()
 {
+    terveiset(3);
     int a;
     int b;
     cout << "Anna luku a" << endl;
@@ -53,5 +55,21 @@ float retDiv  (int num1, int num2){
     else{
         float result = (num1 * 1.0) / num2;
         return result;
+    }
+}
+
+void terveiset(int num) {
+    for (int i =1; i <= num; i++){
+        std::cout << "Terve " << i << std::endl;
+    }
+}
+
+
+void tarkista_jaollisuus(int num) {
+    if (num % 4 == 0){
+        std::cout << "jaollinen" << std::endl;
+    }
+    else if (num % 4 != 0) {
+        std::cout << "ei jaollinen" << std::endl;
     }
 }
